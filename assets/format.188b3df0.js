@@ -1,0 +1,1 @@
+const a=["B","KB","MB","GB","TB","PB"];function u(n){let t=0;for(;parseInt(n,10)>=1024&&t<a.length-1;)n/=1024,++t;return`${n.toFixed(1)}${a[t]}`}function o(n,t,e){return e<=t?t:Math.min(e,Math.max(t,n))}function i(n,t=2,e="0"){if(n==null)return n;const r=""+n;return r.length>=t?r:new Array(t-r.length+1).join(e)+r}export{o as b,u as h,i as p};
